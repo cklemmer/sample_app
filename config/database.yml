@@ -33,7 +33,7 @@ development:
   username: cklemmer
   password:
   
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
   database: sample_app_test
@@ -41,3 +41,5 @@ test:
   timeout: 5000
   username: cklemmer
   password:
+cucumber:
+  <<: *test
